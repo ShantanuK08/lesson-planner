@@ -76,3 +76,18 @@ More?   -d "{\"query\":\"mutation { register(name: \\\"Shantanu\\\", email: \\\"
 
 C:\Users\shant\lesson-planner>
 
+TEACHER ROLE 
+Email: shantanu@test.com
+Password: test1234
+
+Admin account:
+
+Name: Admin User
+Email: admin@test.com
+Password: test1234
+Role: Admin
+
+Name: Student User
+Email: student@test.com
+Password: test1234
+Role: Student

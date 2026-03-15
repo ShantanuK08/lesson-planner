@@ -89,6 +89,20 @@ const lessonResolvers = {
     owner: async (lesson) => {
       const result = await pool.query('SELECT * FROM users WHERE id = $1', [lesson.owner_id]);
       return result.rows[0];
+    },
+    comments: async (lesson) => {
+      const result = await pool.query(
+        'SELECT * FROM comments WHERE lesson_id = $1 ORDER BY created_at ASC',
+        [lesson.id]
+      );
+      return result.rows;
+    }
+  },
+
+  Comment: {
+    user: async (comment) => {
+      const result = await pool.query('SELECT * FROM users WHERE id = $1', [comment.user_id]);
+      return result.rows[0];
     }
   }
 };
