@@ -91,3 +91,12 @@ Name: Student User
 Email: student@test.com
 Password: test1234
 Role: Student
+
+
+Terminal 1 — start the backend:
+C:\Users\shant\lesson-planner\server
+npm run dev
+
+Terminal 2 — start the frontend:
+ C:\Users\shant\lesson-planner\client
+npm run dev
